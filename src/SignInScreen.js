@@ -26,6 +26,10 @@ function SignInScreen() {
     {
         history.push("/booked");
     }
+    else
+    {
+        history.push("/");
+    }
 
   return (
     <div>

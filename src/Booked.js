@@ -27,7 +27,7 @@ function Booked() {
   return (
     <Box display="flex" justifyContent="center">
         <Box borderRadius="borderRadius" {...defaultProps} >
-        <h1 style={{ textAlign: "center" }}>Welcome {name} </h1>
+        <h1 style={{ textAlign: "center", color:"black"  }}>Welcome {name} </h1>
         <h4>You have already booked a room</h4>
         <h3>Your room details are as follows:</h3>
         <p></p>

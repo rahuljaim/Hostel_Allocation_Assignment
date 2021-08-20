@@ -56,9 +56,9 @@
 .hostel-grid1{
   margin-top: 1rem;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 20px;
-  width: 300px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+  grid-gap: 10px;
+  width: 400px;
   position: relative;
   margin: 0 auto;
 }

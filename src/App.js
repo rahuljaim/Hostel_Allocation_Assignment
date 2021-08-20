@@ -26,7 +26,7 @@ function App() {
       <header className="App-header">
       <Router>
       <Switch>
-          <Route exact path="/">
+          <Route exact path="/" >
             <SignInScreen />
           </Route>
           <Route path="/booked">

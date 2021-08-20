@@ -82,7 +82,7 @@ export default function Floor() {
     borderColor: "text.primary",
     m: 1,
     border: 1,
-    style: { width: "40rem", height: "25rem", padding: "30px" },
+    style: { width: "40rem", height: "25rem", padding: "20px" },
   };
 
   if (userObj) {
@@ -93,9 +93,9 @@ export default function Floor() {
     <div className="container-hostel">
       <Box display="flex" justifyContent="center">
         <Box borderRadius="borderRadius" {...defaultProps}>
-          <h1 style={{ textAlign: "center" }}>Choose a Floor </h1>
+          <h1 style={{ textAlign: "center", color:"black" }}>Choose a Floor </h1>
           <FormControl className={classes.formControl}>
-            <InputLabel id="demo-simple-select-label">Select Floor</InputLabel>
+            <InputLabel id="demo-simple-select-label" style ={{textAlign:"center"}}>Select Floor</InputLabel>
             <Select
               labelId="demo-simple-select-label"
               id="demo-simple-select"

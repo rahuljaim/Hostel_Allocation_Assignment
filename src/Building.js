@@ -25,7 +25,7 @@ export default function Building(props) {
     <div className="container-hostel">
       <Box display="flex" justifyContent="center">
         <Box borderRadius="borderRadius" {...defaultProps}>
-          <h1 style={{ textAlign: "center" }}>Choose a Hostel </h1>
+          <h1 style={{ textAlign: "center", color:"black"  }}>Choose a Hostel </h1>
           <div className="hostel-grid">
             <Link to={{ pathname: "/floor", state: { hostel: "1" } }}>
                 <button className="hostel-button">{gender}1</button>

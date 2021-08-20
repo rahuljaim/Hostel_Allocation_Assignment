@@ -6,6 +6,7 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
+import { useHistory } from "react-router-dom";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -23,17 +24,18 @@ const useStyles = makeStyles((theme) => ({
 export default function Header() {
   const classes = useStyles();
   const [login, setLogin] = React.useState("");
-
+  // const history = useHistory();
+  // let { location } = history;
   let userInfo = localStorage.getItem("user");
   let hasLoggedIn = false;
   if(userInfo){
     hasLoggedIn = true;
   }
 
-
   const loginHandler = (event) => {
     if (hasLoggedIn) {
       localStorage.removeItem("user");
+      window.history.go("/dashboard");
     }
   };
 

@@ -30,7 +30,7 @@ function Success() {
   return (
     <Box display="flex" justifyContent="center">
         <Box borderRadius="borderRadius" {...defaultProps} >
-        <h1 style={{ textAlign: "center" }}>Success </h1>
+        <h1 style={{ textAlign: "center", color:"black"  }}>Success </h1>
         <h4>Your room has been booked successfully.</h4>
         <h3>Your room details are as follows:</h3>
         <p></p>
