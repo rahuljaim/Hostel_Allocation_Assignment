@@ -1,23 +1,57 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import SignInScreen from './SignInScreen';
+import Booked from './Booked';
+import {ChooseHostel} from './ChooseHostel';
+import Header from './Header';
+import Building from './Building';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import Floor from './Floor';
+import Success from './Success';
 
 function App() {
+  
   return (
-    <div className="App">
+    
+ 
+    
+    <div >
+      <Header />
+      
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+      <Switch>
+          <Route exact path="/">
+            <SignInScreen />
+          </Route>
+          <Route path="/booked">
+            <ChooseHostel />
+          </Route>
+          <Route path="/dashboard">
+            <Booked />
+          </Route>
+          <Route path="/building">
+            <Building />
+          </Route>
+          <Route path="/floor">
+            <Floor />
+          </Route>
+          <Route path="/success">
+            <Success />
+          </Route>
+        </Switch>
+    </Router>
+      
+
+      </header> 
+      {/* <Booked /> */}
+      {/* <ChooseHostel /> */}
+      {/* <Building /> */}
     </div>
   );
 }

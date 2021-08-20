@@ -36,3 +36,38 @@
     transform: rotate(360deg);
   }
 }
+.container-hostel{
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hostel-grid{
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  width: 300px;
+  position: relative;
+  margin: 0 auto;
+}
+.hostel-grid1{
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  width: 300px;
+  position: relative;
+  margin: 0 auto;
+}
+.hostel-button{
+  cursor: pointer;
+  width:80px;
+  height:80px;
+  background: gray;
+  color: white;
+  border-radius: 15%;
+  border-style: none;
+}
